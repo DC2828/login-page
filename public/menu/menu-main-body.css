@@ -16,7 +16,6 @@
 
 #main-content #book-container #book-list{
     width: 100%;
-    /* min-width: 800px; */
     list-style-type: none;
     padding: 30px 0px;
 }
@@ -66,6 +65,7 @@
 }
 
 #main-content #book-container #book-list .book .details{
+    min-width: 110px;
     width: 80%;
     height: 100%;
     padding:10px 0px;
@@ -77,46 +77,55 @@
 
 #main-content #book-container #book-list .book .details .book-title{
     font-size: 28px;
+    width: 80%;
+    min-width: 110px;
     font-weight: bold;
     font-family: "Lora", serif;
     overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
     margin-bottom: 10px;
 }
 
 #main-content #book-container #book-list .book .details .book-author{
     font-size: 14;
+    min-width: 110px;
+    width: 80%;
     font-family: "Roboto", serif;
     font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     margin-bottom: 2%;
 }
 
 #main-content #book-container #book-list .book .details .description{
     font-size: 16px;
-    width: 90%;
-    height: 5em;
-    max-height: 5em;
+    width: 80%;
+    min-width: 110px;
+    height: 9em;
+    max-height: 9em;
     line-height: 1.5em;
     margin-bottom: 5px;
     font-family: "Roboto", serif;
     overflow: hidden;
     text-overflow: ellipsis;
+    /* background: #000; */
 }
 
 #main-content #book-container #book-list .book .details .type{
     font-size: 16px;
     width: 90%;
     font-family: "Roboto", serif;
-    overflow: hidden;
+    /* overflow: hidden; */
     text-overflow: ellipsis;
-    position: absolute;
+    white-space: nowrap;
     bottom: 90px;
 }
 
 #main-content #book-container #book-list .book .details .price{
     font-size: 28px;
     font-weight: bold;  
-    position: absolute;
     width: 10%;
     bottom: 50px;
     color: var(--color--lightred);
@@ -139,7 +148,7 @@
     padding: 0;
 }
    
- .pagination-container .page-item .page-link {
+.pagination-container .page-item .page-link {
     display: block;
     padding: 8px 16px;
     color: var(--color--darkgreen);
@@ -152,7 +161,7 @@
 .pagination-container .page-item .page-link:hover {
         background-color: var(--light--grey);
         color: var(--color--black);
-    }
+}
    
 .pagination-container .page-item.active .page-link {
     background-color: var(--color--darkgreen);
