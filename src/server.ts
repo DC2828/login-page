@@ -19,7 +19,7 @@ app.get('/login', (req: Request, res: Response) => {
 });
 
 app.get('/menu', (req: Request, res: Response) => {
-    res.status(200).render('menu');
+    res.status(200).render('menu', { role: 'admin' });
 });
 
 app.listen(PORT, () => {
